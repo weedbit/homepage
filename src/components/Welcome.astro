@@ -54,6 +54,8 @@ import background from '../assets/background.svg';
 			<button id="lang-en" class="cursor-pointer font-semibold text-[#2E7D32] bg-white border border-[#2E7D32] rounded px-3 py-1 hover:bg-[#2E7D32] hover:text-white transition mdc-typography--body1">EN</button>
 			<span class="text-[#2E7D32] mdc-typography--body1 font-bold">|</span>
 			<button id="lang-ru" class="cursor-pointer font-semibold text-[#2E7D32] bg-white border border-[#2E7D32] rounded px-3 py-1 hover:bg-[#2E7D32] hover:text-white transition mdc-typography--body1">RU</button>
+			<span class="text-[#2E7D32] mdc-typography--body1 font-bold">|</span>
+			<button id="lang-thADd" class="cursor-pointer font-semibold text-[#2E7D32] bg-white border border-[#2E7D32] rounded px-3 py-1 hover:bg-[#2E7D32] hover:text-white transition mdc-typography--body1">TH</button>
 		</div>
 	  <p>&copy; 2025 WeedBit. Все права защищены.</p>
 	</footer>
@@ -138,6 +140,7 @@ import background from '../assets/background.svg';
 
 	document.getElementById('lang-en').onclick = () => setLanguage('en');
 	document.getElementById('lang-ru').onclick = () => setLanguage('ru');
+	document.getElementById('lang-th').onclick = () => setLanguage('th');
 
 	// Загрузка языка по умолчанию (из localStorage или английский)
 	const defaultLang = localStorage.getItem('lang') || 'en';
