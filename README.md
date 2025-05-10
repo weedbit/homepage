@@ -1,28 +1,24 @@
-
-
 # 🌿 WeedBit
 
-WeedBit — это децентрализованная криптовалюта для индустрии каннабиса. Проект основан на открытом исходном коде и призван обеспечить прозрачные, проверяемые и безопасные расчёты между фермами, потребителями и инвесторами.
+![Preview](./public/img/smm.png)
 
-## 🔗 Сайт проекта
+WeedBit is a decentralized cryptocurrency for the cannabis industry. The project is open-source and aims to provide transparent, verifiable, and secure transactions between farms, consumers, and investors.
+
+## 🔗 Project Website
 [https://weedbit.org](https://weedbit.org)
 
-## 🖼️ Превью
-
-![WeedBit Preview](./public/img/smm.png)
-
-## 📦 Установка
+## 📦 Installation
 
 ```bash
 npm install
 npm run dev
 ```
 
-## 💡 Возможности
-- Поддержка нескольких языков (EN 🇬🇧 / RU 🇷🇺 / TH 🇹🇭)
-- Адаптивный дизайн
-- Интеграция с блокчейном и оракулами
-- Поддержка пожертвований
+## 💡 Features
+- Multi-language support (EN 🇬🇧 / RU 🇷🇺 / TH 🇹🇭)
+- Responsive design
+- Integration with blockchain and oracles
+- Donation support
 
-## 🤝 Поддержка
-Мы открыты к предложениям, участию и доработкам. Поддержите проект, если он вам полезен!
+## 🤝 Support
+We welcome suggestions, participation, and improvements. Support the project if you find it useful!
