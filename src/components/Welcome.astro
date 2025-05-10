@@ -1,38 +1,13 @@
 ---
 import { useState } from 'react';
 import WeedBitLogo from '../assets/WeedBit.svg';
-import background from '../assets/background.svg';
+import softBackground from '../assets/background-soft.png';
 ---
-
-<!-- <div class="donation-container">
-  <div class="donation-text">
-    <div class="donation-text-container">
-      <button onclick="closeDonationBanner()" class="donation-modal-close">
-        <img src="/img/icons/ico_close.svg" alt="Close">
-      </button>
-      <p>
-        WeedBit — проект, финансируемый сообществом. Ваши пожертвования помогут развитию сайта и инфраструктуры.
-      </p>
-      <button type="button" class="btn btn-success" onclick="openDonationModal()">
-        Сделать пожертвование
-      </button>
-    </div>
-  </div>
-  <button type="button" class="btn btn-success donation-visibility-toggle" onclick="toggleDonationBanner()">
-    Поддержите WeedBit!
-  </button>
-</div> -->
 
 <div class="min-h-screen bg-white text-[#222222] font-sans">
 	<header class="container d-flex justify-content-between align-items-center py-4 border-bottom border-success">
 	  <img src={WeedBitLogo.src} width="40" alt="WeedBit" class="h-8" />
 	  <nav class="d-flex align-items-center ms-auto">
-		<!-- <ul class="flex gap-6 list-none m-0 p-0">
-		  <li><a id="menu-home" href="#" class="hover:text-[#43A047] hover:underline transition px-2 py-1">Home</a></li>
-		  <li><a id="menu-about" href="#" class="hover:text-[#43A047] hover:underline transition px-2 py-1">About</a></li>
-		  <li><a id="menu-tokens" href="#" class="hover:text-[#43A047] hover:underline transition px-2 py-1">Tokens</a></li>
-		  <li><a id="menu-docs" href="#" class="hover:text-[#43A047] hover:underline transition px-2 py-1">Documentation</a></li>
-		</ul> -->
 		<div class="d-flex align-items-center">
 		  <button id="lang-en" class="btn btn-link text-success p-0 mx-2 fs-3">🇬🇧</button>
 		  <button id="lang-ru" class="btn btn-link text-success p-0 mx-2 fs-3">🇷🇺</button>
@@ -49,7 +24,11 @@ import background from '../assets/background.svg';
 		  <section class="mb-4 container">
 			<h2 class="mdc-typography--headline3 mb-4">WeedBit — инновационная цифровая валюта для каннабис-индустрии</h2>
 			<p class="mdc-typography--body1 mb-6">WeedBit использует блокчейн-технологии для обеспечения прозрачных и надёжных транзакций, связанных с реальными активами ферм.</p>
-			<a href="https://github.com/orgs/weedbit/repositories" class="btn btn-success rounded-lg font-semibold shadow-lg hover:bg-[#e07b11] transition mdc-typography--button">Начать работу с WeedBit</a>
+			<div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
+			  <a href="https://github.com/orgs/weedbit/repositories" class="btn btn-success text-white fw-bold px-4 py-3">👉 Start using WeedBit</a>
+			  <button class="btn btn-outline-success fw-bold px-4 py-3">🧪 View Technology</button>
+			  <button class="btn btn-outline-success fw-bold px-4 py-3">💸 Get Tokens</button>
+			</div>
 		  </section>
 		</div>
 	  </div>
@@ -57,19 +36,19 @@ import background from '../assets/background.svg';
 	  <section class="container">
 		<div class="row">
 		  <div class="col-12 col-md-4 mb-4">
-			<div class="bg-gray-100 p-4 rounded-lg shadow-lg">
+			<div class="p-5 rounded-4 border border-success border-opacity-25 shadow-lg">
 			  <h3 class="mdc-typography--headline6 mb-3">Быстрые и прозрачные транзакции</h3>
 			  <p class="mdc-typography--body2">Мгновенная верификация данных благодаря оракулам и блокчейн-технологиям.</p>
 			</div>
 		  </div>
 		  <div class="col-12 col-md-4 mb-4">
-			<div class="bg-gray-100 p-4 rounded-lg shadow-lg">
+			<div class="p-5 rounded-4 border border-success border-opacity-25 shadow-lg">
 			  <h3 class="mdc-typography--headline6 mb-3">Обеспечение реальными активами</h3>
 			  <p class="mdc-typography--body2">Каждый токен привязан к продукции и показателям реальных ферм.</p>
 			</div>
 		  </div>
 		  <div class="col-12 col-md-4 mb-4">
-			<div class="bg-gray-100 p-4 rounded-lg shadow-lg">
+			<div class="p-5 rounded-4 border border-success border-opacity-25 shadow-lg">
 			  <h3 class="mdc-typography--headline6 mb-3">Инновационная интеграция IoT</h3>
 			  <p class="mdc-typography--body2">Связь IoT-устройств с блокчейном через технологии Chainlink и Quorum.</p>
 			</div>
@@ -97,11 +76,13 @@ import background from '../assets/background.svg';
 
 <style>
 	.main-background {
-		background-image: url(${background});
+		background-image: url(${softBackground});
 		background-size: cover;
 		background-position: center;
+		background-repeat: no-repeat;
 	}
 </style>
+
 <script>
 	const translations = {
 		en: {
