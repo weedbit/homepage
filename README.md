@@ -9,7 +9,7 @@ WeedBit — это децентрализованная криптовалюта
 
 ## 🖼️ Превью
 
-![WeedBit Preview](./src/assets/hero-background.png)
+![WeedBit Preview](./public/img/smm.png)
 
 ## 📦 Установка
 
