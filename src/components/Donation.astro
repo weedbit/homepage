@@ -1,0 +1,17 @@
+---
+import WeedBitLogo from '../assets/WeedBit.svg'
+import translations from '../data/translations.ts';
+import softBackground from '../assets/background-soft.png';
+const t = translations.en;
+---
+
+<section class="container mb-5">
+    <div class="bg-light border border-success rounded shadow p-4 d-flex flex-column align-items-center">
+      <div class="d-flex align-items-center gap-2 mb-3">
+        <svg width="32" height="32" fill="none" viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="#2E7D32"/><text x="16" y="22" text-anchor="middle" font-size="18" fill="#fff" font-family="Arial, sans-serif">☘️</text></svg>
+        <span class="h5 text-success fw-bold mb-0" data-i18n="donateTitle">{t.donateTitle}</span>
+      </div>
+      <p class="text-center text-success mb-4" data-i18n="donateDesc">{t.donateDesc}</p>
+      <a href="bitcoin:bc1qdr89zlyxtkdr8r2r9kmv077f84kteyjng2nm05" target="_blank" rel="noopener" class="btn btn-success px-4 py-2 rounded fw-semibold shadow-sm hover-bg-success" data-i18n="donateButton">{t.donateButton}</a>
+    </div>
+</section>
