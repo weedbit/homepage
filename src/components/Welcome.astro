@@ -4,43 +4,72 @@ import WeedBitLogo from '../assets/WeedBit.svg';
 import background from '../assets/background.svg';
 ---
 
+<!-- <div class="donation-container">
+  <div class="donation-text">
+    <div class="donation-text-container">
+      <button onclick="closeDonationBanner()" class="donation-modal-close">
+        <img src="/img/icons/ico_close.svg" alt="Close">
+      </button>
+      <p>
+        WeedBit — проект, финансируемый сообществом. Ваши пожертвования помогут развитию сайта и инфраструктуры.
+      </p>
+      <button type="button" class="btn btn-success" onclick="openDonationModal()">
+        Сделать пожертвование
+      </button>
+    </div>
+  </div>
+  <button type="button" class="btn btn-success donation-visibility-toggle" onclick="toggleDonationBanner()">
+    Поддержите WeedBit!
+  </button>
+</div> -->
+
 <div class="min-h-screen bg-white text-[#222222] font-sans">
-	<header class="px-6 py-6 max-w-6xl mx-auto flex justify-between items-center bg-white border-b border-[#2E7D32]">
-	  <h1 class="mdc-typography--headline4 text-[#2E7D32] font-bold">☘️ WeedBit</h1>
-	  <nav class="flex items-center gap-8 text-[#2E7D32] font-sans text-base">
+	<header class="container d-flex justify-content-between align-items-center py-4 border-bottom border-success">
+	  <img src={WeedBitLogo.src} width="40" alt="WeedBit" class="h-8" />
+	  <nav class="d-flex align-items-center ms-auto">
 		<!-- <ul class="flex gap-6 list-none m-0 p-0">
-		  <li><a id="menu-home" href="#" class="hover:text-[#43A047] hover:underline transition mdc-typography--body1 px-2 py-1">Главная</a></li>
-		  <li><a id="menu-about" href="#" class="hover:text-[#43A047] hover:underline transition mdc-typography--body1 px-2 py-1">О проекте</a></li>
-		  <li><a id="menu-tokens" href="https://github.com/weedbit/weedquorum" class="hover:text-[#43A047] hover:underline transition mdc-typography--body1 px-2 py-1">Токены</a></li>
-		  <li><a id="menu-docs" href="#" class="hover:text-[#43A047] hover:underline transition mdc-typography--body1 px-2 py-1">Документация</a></li>
+		  <li><a id="menu-home" href="#" class="hover:text-[#43A047] hover:underline transition px-2 py-1">Home</a></li>
+		  <li><a id="menu-about" href="#" class="hover:text-[#43A047] hover:underline transition px-2 py-1">About</a></li>
+		  <li><a id="menu-tokens" href="#" class="hover:text-[#43A047] hover:underline transition px-2 py-1">Tokens</a></li>
+		  <li><a id="menu-docs" href="#" class="hover:text-[#43A047] hover:underline transition px-2 py-1">Documentation</a></li>
 		</ul> -->
-		<!-- Language Toggle Switch -->
+		<div class="d-flex align-items-center">
+		  <button id="lang-en" class="btn btn-link text-success p-0 mx-2 fs-3">🇬🇧</button>
+		  <button id="lang-ru" class="btn btn-link text-success p-0 mx-2 fs-3">🇷🇺</button>
+		  <button id="lang-th" class="btn btn-link text-success p-0 mx-2 fs-3">🇹🇭</button>
+		</div>
 	  </nav>
 	</header>
   
-	<main class="max-w-6xl mx-auto py-20 px-4 text-center bg-white">
-	  <section class="mb-4">
-		<h2 class="mdc-typography--headline3 mb-4">WeedBit — инновационная цифровая валюта для каннабис-индустрии</h2>
-		<p class="mdc-typography--body1 mb-6">WeedBit использует блокчейн-технологии для обеспечения прозрачных и надёжных транзакций, связанных с реальными активами ферм.</p>
-		<a href="https://github.com/orgs/weedbit/repositories" class="inline-block bg-[#F7931A] text-white px-6 py-3 rounded-lg font-semibold shadow-lg hover:bg-[#e07b11] transition mdc-typography--button">Начать работу с WeedBit</a>
-	  </section>
+	<main
+		class="container py-20 px-4 text-center bg-white main-background"
+	>
+	  <div class="mainhero d-flex align-items-center" style="min-height: 75vh; padding-top: 4rem; padding-bottom: 4rem;">
+		<div class="container hero-container py-5">
+		  <section class="mb-4 container">
+			<h2 class="mdc-typography--headline3 mb-4">WeedBit — инновационная цифровая валюта для каннабис-индустрии</h2>
+			<p class="mdc-typography--body1 mb-6">WeedBit использует блокчейн-технологии для обеспечения прозрачных и надёжных транзакций, связанных с реальными активами ферм.</p>
+			<a href="https://github.com/orgs/weedbit/repositories" class="btn btn-success rounded-lg font-semibold shadow-lg hover:bg-[#e07b11] transition mdc-typography--button">Начать работу с WeedBit</a>
+		  </section>
+		</div>
+	  </div>
   
-	  <section class="mdc-layout-grid grid">
-		<div class="mdc-layout-grid__inner">
-		  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-4-tablet">
-			<div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+	  <section class="container">
+		<div class="row">
+		  <div class="col-12 col-md-4 mb-4">
+			<div class="bg-gray-100 p-4 rounded-lg shadow-lg">
 			  <h3 class="mdc-typography--headline6 mb-3">Быстрые и прозрачные транзакции</h3>
 			  <p class="mdc-typography--body2">Мгновенная верификация данных благодаря оракулам и блокчейн-технологиям.</p>
 			</div>
 		  </div>
-		  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-4-tablet">
-			<div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+		  <div class="col-12 col-md-4 mb-4">
+			<div class="bg-gray-100 p-4 rounded-lg shadow-lg">
 			  <h3 class="mdc-typography--headline6 mb-3">Обеспечение реальными активами</h3>
 			  <p class="mdc-typography--body2">Каждый токен привязан к продукции и показателям реальных ферм.</p>
 			</div>
 		  </div>
-		  <div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12 mdc-layout-grid__cell--span-4-desktop mdc-layout-grid__cell--span-4-tablet">
-			<div class="bg-gray-100 p-6 rounded-lg shadow-lg">
+		  <div class="col-12 col-md-4 mb-4">
+			<div class="bg-gray-100 p-4 rounded-lg shadow-lg">
 			  <h3 class="mdc-typography--headline6 mb-3">Инновационная интеграция IoT</h3>
 			  <p class="mdc-typography--body2">Связь IoT-устройств с блокчейном через технологии Chainlink и Quorum.</p>
 			</div>
@@ -49,18 +78,30 @@ import background from '../assets/background.svg';
 	  </section>
 	</main>
   
-	<footer class="px-4 py-6 bg-gray-200 text-center text-[#222222] mdc-typography--body2">
-		<div class="flex gap-2 ml-8 items-center">
-			<button id="lang-en" class="cursor-pointer font-semibold text-[#2E7D32] bg-white border border-[#2E7D32] rounded px-3 py-1 hover:bg-[#2E7D32] hover:text-white transition mdc-typography--body1">EN</button>
-			<span class="text-[#2E7D32] mdc-typography--body1 font-bold">|</span>
-			<button id="lang-ru" class="cursor-pointer font-semibold text-[#2E7D32] bg-white border border-[#2E7D32] rounded px-3 py-1 hover:bg-[#2E7D32] hover:text-white transition mdc-typography--body1">RU</button>
-			<span class="text-[#2E7D32] mdc-typography--body1 font-bold">|</span>
-			<button id="lang-th" class="cursor-pointer font-semibold text-[#2E7D32] bg-white border border-[#2E7D32] rounded px-3 py-1 hover:bg-[#2E7D32] hover:text-white transition mdc-typography--body1">TH</button>
+	<!-- DONATE BLOCK START -->
+	<section class="container mb-5">
+	  <div class="bg-light border border-success rounded shadow p-4 d-flex flex-column align-items-center">
+		<div class="d-flex align-items-center gap-2 mb-3">
+		  <svg width="32" height="32" fill="none" viewBox="0 0 32 32"><circle cx="16" cy="16" r="16" fill="#2E7D32"/><text x="16" y="22" text-anchor="middle" font-size="18" fill="#fff" font-family="Arial, sans-serif">☘️</text></svg>
+		  <span id="donate-title" class="h5 text-success fw-bold mb-0">Support WeedBit!</span>
 		</div>
+		<p id="donate-desc" class="text-center text-success mb-4">WeedBit is a community-funded project. Your donations help develop the website and infrastructure.</p>
+		<a id="donate-btn" href="https://yoomoney.ru/to/weedbit" target="_blank" rel="noopener" class="btn btn-success px-4 py-2 rounded fw-semibold shadow-sm hover-bg-success">Make a Donation</a>
+	  </div>
+	</section>
+	<!-- DONATE BLOCK END -->
+	<footer class="px-4 py-6 bg-gray-200 text-center text-[#222222] mdc-typography--body2">
 	  <p>&copy; 2025 WeedBit. Все права защищены.</p>
 	</footer>
 </div>
 
+<style>
+	.main-background {
+		background-image: url(${background});
+		background-size: cover;
+		background-position: center;
+	}
+</style>
 <script>
 	const translations = {
 		en: {
@@ -77,7 +118,10 @@ import background from '../assets/background.svg';
 		menuHome: "Home",
 		menuAbout: "About",
 		menuTokens: "Tokens",
-		menuDocs: "Documentation"
+		menuDocs: "Documentation",
+		donateTitle: "Support WeedBit!",
+		donateDesc: "WeedBit is a community-funded project. Your donations help develop the website and infrastructure.",
+		donateButton: "Make a Donation"
 		},
 		ru: {
 		title: "Цифровая валюта нового поколения для каннабис-индустрии",
@@ -93,7 +137,10 @@ import background from '../assets/background.svg';
 		menuHome: "Главная",
 		menuAbout: "О проекте",
 		menuTokens: "Токены",
-		menuDocs: "Документация"
+		menuDocs: "Документация",
+		donateTitle: "Поддержите WeedBit!",
+		donateDesc: "WeedBit — проект, финансируемый сообществом. Ваши пожертвования помогут развитию сайта и инфраструктуры.",
+		donateButton: "Сделать пожертвование"
 		},
 		th: {
 		title: "สกุลเงินดิจิทัลยุคใหม่สำหรับอุตสาหกรรมกัญชา",
@@ -109,7 +156,10 @@ import background from '../assets/background.svg';
 		menuHome: "หน้าแรก",
 		menuAbout: "เกี่ยวกับ",
 		menuTokens: "โทเค็น",
-		menuDocs: "เอกสาร"
+		menuDocs: "เอกสาร",
+		donateTitle: "สนับสนุน WeedBit!",
+		donateDesc: "WeedBit เป็นโครงการที่ได้รับทุนจากชุมชน การบริจาคของคุณจะช่วยพัฒนาเว็บไซต์และโครงสร้างพื้นฐาน",
+		donateButton: "บริจาค"
 		}
 	};
 
@@ -118,7 +168,7 @@ import background from '../assets/background.svg';
 		document.querySelector('section p').innerText = translations[lang].description;
 		document.querySelector('section a').innerText = translations[lang].start;
 
-		const cards = document.querySelectorAll('section.grid > div > div > div');
+		const cards = document.querySelectorAll('section.container > .row > div > div');
 		cards[0].querySelector('h3').innerText = translations[lang].transparency;
 		cards[0].querySelector('p').innerText = translations[lang].transparencyDesc;
 
@@ -134,6 +184,10 @@ import background from '../assets/background.svg';
 		document.getElementById('menu-about').innerText = translations[lang].menuAbout;
 		document.getElementById('menu-tokens').innerText = translations[lang].menuTokens;
 		document.getElementById('menu-docs').innerText = translations[lang].menuDocs;
+
+		document.getElementById('donate-title').innerText = translations[lang].donateTitle;
+		document.getElementById('donate-desc').innerText = translations[lang].donateDesc;
+		document.getElementById('donate-btn').innerText = translations[lang].donateButton;
 
 		localStorage.setItem('lang', lang);
 	}
