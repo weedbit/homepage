@@ -1,0 +1,13 @@
+User-agent: \*
+Disallow:
+
+# Uncomment and adjust to block specific paths
+
+# Disallow: /admin/
+
+# Disallow: /private/
+
+# Sitemap location
+
+Sitemap: [https://weedbit.org/sitemap.xml](https://weedbit.org/sitemap.xml)
+Host: [https://weedbit.org](https://weedbit.org)
