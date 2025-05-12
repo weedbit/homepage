@@ -1,4 +1,4 @@
-# 🌿 WeedBit
+# <img src="https://weedbit.org/_astro/WeedBit.D8BdzzoI.svg" width="200" height="35"/>
 
 ![Preview](./public/img/smm.png)
 
